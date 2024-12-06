@@ -66,5 +66,4 @@ function keyPressed() {
 // Evento de click del mouse
 function mousePressed() {
     juego.mainScreen.botones.handleMousePressed();
-    // Detecta clics del mouse en botones del juego con el metodo/funcion (MousePressed)
 }
