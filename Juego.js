@@ -11,7 +11,7 @@ class Juego {
     this.secuacesLives = 1;
     this.combustible = 100;
     this.riverWidth = 640;
-//Variables de Arreglosthis.traitor
+//Variables de Arreglos
 this.secuaces = [];
 this.combustibles = [];
 // Inicialización de proyectiles
