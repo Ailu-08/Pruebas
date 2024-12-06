@@ -10,9 +10,11 @@ class MainScreen {
     if (this.gameState === "Inicio") {
       this.drawInicio();
     } else if (this.gameState === "Instrucciones") { 
-//Cargar instancia de pantallas y meter las condicionales de los botones
+//Cargar instancia de pantallas y meter las condicionales de los botones 
     //( y hacer una clase con las variables de pantallas (????) Lo dijo el prof de com 1 creo o no se 
-    //porque ni entiendo lo que quieren!! 
+      //aunque dijo que estab bien tambien asi
+    //No entiendo lo que quieren!! 
+      //O hay que hacer una clase para cada pantalla?? Me maree :( 
     
       this.drawInstrucciones();
     } else if (this.gameState === "Juego") {
