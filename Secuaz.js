@@ -9,7 +9,7 @@ class Secuaz {
   
   move() {
     this.y += this.speed; // Incrementa la posición Y del secuaz, moviéndolo hacia abajo o arriba.
-// Si el secuaz llega a la mitad de la pantalla o al borde superior, invierte su dirección. !!!!COMO?????????
+// Si el secuaz llega a la mitad de la pantalla o al borde superior, invierte su dirección.
     if (this.y > height / 2 || this.y < 0) this.speed *= -1; //variable = variable * valor; // speed *= 2; // Equivalente a speed= speed * -1; (Convierte el valor en negativo)
   }
   
