@@ -17,7 +17,7 @@ class Combustible {
 // Calcula la distancia entre el combustible (this.x, this.y) y el personaje 'dastan' (dastan.x, dastan.y)
     let d = dist(this.x, this.y, dastan.x, dastan.y);
     
-// Retorna 'true' (COMO??? bUSCAR DESP) si la distancia es menor que 20 (indica que 'dastan' ha recogido el combustible)
+// Retorna 'true'  si la distancia es menor que 20 (indica que 'dastan' ha recogido el combustible)
 
     return d < 20;
   }
