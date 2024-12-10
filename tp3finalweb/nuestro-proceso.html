@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta tags requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bitácora - El príncipe de Persia</title>
+
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- librería de p5.js desde un CDN -->
+    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- archivo CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <!-- Crear un contenedor para el contenido del sitio web -->
+    <div class="container">
+        <!-- Crear un encabezado con el título del sitio web y una barra de navegación con botones -->
+        <header class="py-3">
+            <div id="header-img">
+                <img id="bkg-img" src="images/header.png" />
+            </div>
+            <div id="margin-top1">
+                <h1>El príncipe de Persia</h1>
+            
+                <p id=subtitle>Una aventura gráfica realizada por <br> Avanzini Ailen y Clar Agustina.</p>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="p-4" id="oculto">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item" id="margin-bottom75" id="margin-right1">
+                                    <a class="nav-link" href="sobre-nosotras.html">Sobre nosotras</a>
+                                </li>
+                                <li class="nav-item" id="margin-bottom1" id="margin-right1">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        Jugar ahora
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Volver al inicio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark" id="oculto">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotras.html">Sobre nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Jugar ahora
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver al inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Crear una sección principal con información sobre el juego -->
+        <main class="py-3">
+            <div class="column inline">
+                <h2>¿Cómo lo creamos?</h2>
+                <p>Para llevar a cabo este proyecto realizamos una serie de pasos. <br> <br> En primer lugar, <b>hicimos un diagrama de flujo
+                        en
+                        Figjam</b>,
+                    una herramienta online que permite crear esquemas visuales de forma colaborativa. En el diagrama,
+                    <b>plasmamos las diferentes escenas del juego, las opciones que tendría el jugador y las
+                        consecuencias
+                        de sus elecciones</b>. Así, definimos la estructura y la lógica del juego, y nos aseguramos de
+                    que fuera
+                    coherente con el relato original.
+                </p>
+
+                <p>
+                    <!-- Gallery 1 -->
+                    <div class="row" style="width: 760px; height: 400px; border: 1px solid rgba(99, 58, 97, 0.1); position: relative;">
+                        <!-- Static preview -->
+                        <a href="https://www.figma.com/board/W182wDNffjNHWQzHQ9bTvi/FigJam-Basics" target="_blank" title="Abrir en Figma" style="display: block; width: 100%; height: 100%;">
+                            <img src="images/figma.png" alt="Figma Project Preview"
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+                            <!-- Figma icon overlay -->
+                            <img src="icons/figma-brands-solid.svg" alt="Figma Icon"
+                                style="position: absolute; bottom: 10px; right: 10px; width: 50px; height: 50px; background: rgba(255, 255, 255, 0.8); border-radius: 50%; padding: 5px;" />
+                        </a>
+                    </div>
+                    <!-- Gallery 1 -->
+                </p>
+                
+
+                <p id="margin-top1">En segundo lugar definimos la estética y creamos imágenes con IA, explicando detalladamente lo que queríamos representar en cada una. <b>
+                     <b>Luego comenzamos a programar la aventura utilizando la herramienta Processing y por último </b> transportamos todas estas ideas a un mini juego web hecho en P5JS.
+                    <b>Para esta página web utilizamos Photoshop para editar y producir las imágenes y la tipografía Papyrus</b>.
+                </p>
+
+                <!-- Gallery 2 -->
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="images/sketches/horizontales/imagen (7).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 1" />
+
+                        <img src="images/sketches/horizontales/imagen (2).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 2" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="images/sketches/horizontales/imagen (10).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 3" />
+
+                        <img src="images/sketches/horizontales/imagen (4).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 4" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="images/sketches/horizontales/imagen (5).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 5" />
+
+                        <img src="images/sketches/horizontales/imagen (6).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 6" />
+                    </div>
+                </div>
+                <!-- Gallery 2-->
+
+                
+
+                <!-- Gallery 3-->
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="images/sketches/verticales/vertical (1).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 1" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="images/sketches/verticales/vertical (2).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 4" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="images/sketches/verticales/vertical (3).jpg"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Imagen 6" />
+                    </div>
+                </div>
+             
+        
+        </main>
+        <!-- Crear un pie de página con información de contacto -->
+        <footer class="py-3 bg-dark text-white">
+            <span class="text-center">Esta página web fue creada por Ailu y Agus para el TP Final de pmiw 1.</span>
+            <br>
+            <span class="text-center"><b>
+                    < Facultad de Artes, UNLP>
+                </b></span>
+            <div id="footer-img">
+                <img id="bkg-img" src="images/footer.png" />
+            </div>
+        </footer>
+    </div>
+
+ <!-- Crear un modal para mostrar el juego de p5.js -->
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCentered"
+ aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLongTitle">Actividad interactiva: "El príncipe de Persia"</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body canvas" width="700"  height="520">
+      <iframe src="game/index.html" frameborder="0" width="640"  height="480"></iframe>
+     </div>
+   </div>
+ </div>
+</div>
+
+  <!-- JavaScript -->
+
+  <!-- jQuery primero, luego Popper.js, luego Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+

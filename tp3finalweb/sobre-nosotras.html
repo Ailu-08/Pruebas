@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta tags requeridas -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Biografías - El príncipe de Persia</title>
+
+
+  <!-- librería de p5.js desde un CDN -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- archivo CSS personalizado -->
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+  <!-- Crear un contenedor para el contenido del sitio web -->
+  <div class="container">
+    <!-- Crear un encabezado con el título del sitio web y una barra de navegación con botones -->
+    <header class="py-3">
+      <div id="header-img">
+        <img id="bkg-img" src="images/header.png" />
+      </div>
+      <div id="margin-top1">
+        <h1>El príncipe de Persia</h1>
+        <p id=subtitle>Una aventura gráfica realizada por <br> Clar Agustina y Avanzini Ailen.</p>
+      </div>
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4" id="oculto">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" id="margin-bottom75" id="margin-right1">
+                  <a class="nav-link" href="index.html">Volver al inicio</a>
+                </li>
+                <li class="nav-item" id="margin-bottom1" id="margin-right1">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Jugar ahora
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nuestro-proceso.html">Nuestro proceso</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark" id="oculto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Volver al inicio</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Jugar ahora
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nuestro-proceso.html">Nuestro proceso</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Crear una sección principal con información sobre el juego -->
+    <main class="py-3">
+      <div class="column inline">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos Agustina y Ailu, dos <b>estudiantes de la carrera de Diseño Multimedial de
+            la
+            Facultad de Artes (UNLP)</b>. Nos interesa la narrativa interactiva y la expresión artística a través de los
+          medios digitales. En este proyecto, realizamos una aventura gráfica y un mini juego basados en el videojuego clásico de 1989 "el príncipe de persia". </p>
+        <div class="row">
+          <!-- Esta es la columna que ajusta el tamaño de la primera tarjeta -->
+          <div class="col">
+            <!-- Esta es la primera tarjeta -->
+            <div class="card">
+              <!-- Esta es la foto de la primera tarjeta -->
+              <img src="images/foto_Agus.jpg" class="card-img-top" alt="Foto de Julia">
+              <!-- Este es el contenido de la primera tarjeta -->
+              <div class="card-body">
+                <!-- Este es el título de la primera tarjeta -->
+                <h5 class="card-title">Clar Agustina</h5>
+                <!-- Este es el texto de la primera tarjeta -->
+                <p class="card-text">
+                  <b>N° de legajo:</b> 93551/8 <br>
+                  <b>Edad:</b> <br>
+                  <b>Hobbies:</b> producción y mezcla de música electrónica, acrobacia en tela. <br><br>
+                Considera a la creatividad como lo más valioso. De esta carrera espera poder tomar las herramientas que le interesen para fusionar el arte y la tecnología.
+                </p>
+                <!-- Este es el ícono de la red social de la primera tarjeta -->
+                <a href="https://soundcloud.com/agustina-clar" class="card-link icon">
+                  <img src="icons/soundcloud-brands-solid.svg" alt="SoundCloud" width="35" height="35" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Esta es la columna que ajusta el tamaño de la segunda tarjeta -->
+          <div class="col">
+            <!-- Esta es la segunda tarjeta -->
+            <div class="card">
+              <!-- Esta es la foto de la segunda tarjeta -->
+              <img src="images/foto_Ailu.jpg" class="card-img-top" alt="Foto de Joaquín">
+              <!-- Este es el contenido de la segunda tarjeta -->
+              <div class="card-body">
+                <!-- Este es el título de la segunda tarjeta -->
+                <h5 class="card-title">Ailen Avanzini</h5>
+                <!-- Este es el texto de la segunda tarjeta -->
+                <p class="card-text">
+                  <b>N° de legajo:</b> 94698/3 <br>
+                  <b>Edad:</b> <br>
+                  <b>Hobbies:</b> canto, dibujo, escribir poesía y hacer videos. <br><br>
+                  Tiene una gran pasión por el arte y su objetivo mayor es poder crear y producir sus propios proyectos de animación y diseño.
+                </p>
+                
+                <!-- Este es el ícono de la red social de la segunda tarjeta -->
+                <a href="https://www.youtube.com/@angelamartinez6431" class="card-link icon">
+                  <img src="icons/youtube-brands-solid.svg" alt="Youtube" width="35" height="35" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Crear un pie de página con información de contacto -->
+    <footer class="py-3 bg-dark text-white">
+      <span class="text-center">Esta página web fue creada por Ailu y Agus para el TP Final de Pmiw.</span>
+      <br>
+      <span class="text-center"><b>
+          < Facultad de Artes, UNLP>
+        </b></span>
+      <div id="footer-img">
+        <img id="bkg-img" src="images/footer.png" />
+      </div>
+    </footer>
+  </div>
+
+ <!-- Crear un modal para mostrar el juego de p5.js -->
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCentered"
+ aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLongTitle">Actividad interactiva: "El príncipe de Persia"</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body canvas" width="700"  height="520">
+      <iframe src="game/index.html" frameborder="0" width="640"  height="480"></iframe>
+     </div>
+   </div>
+ </div>
+</div>
+
+  <!-- JavaScript -->
+
+  <!-- jQuery primero, luego Popper.js, luego Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+/* CSS para los estilos de la página */
+
+/* Aplicar Papyrus a todo el documento */
+* {
+  text-align: center;
+  border-radius: 15px !important;
+}
+
+@font-face {
+  font-family: "Papyrus";
+  src: url(data/Papyrus.ttf) format("truetype");
+}
+
+/* Aplicar Papyrus a todo el documento */
+* {
+  font-family: 'Papyrus', fantasy;
+}
+
+body {
+  /* background-image: linear-gradient(to right, #141e30, #243b55); */
+  background-image: url("images/background3.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.card-img-top {
+  width: 18rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+#footer-img {
+  background-image: url("images/footer.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 150px;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#bkg-img {
+  position: absolute;
+  display: block;
+  float: left;
+  z-index: -1;
+
+}
+
+#header-img {
+  background-image: url("images/header.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.canvas {
+  /* position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1; */
+}
+
+h1 {
+  font-size: 48px;
+  color: rgb(255, 162, 40);
+}
+
+h2 {
+  font-size: 32px;
+  color: rgb(90, 60, 90);
+}
+
+p {
+  font-size: 18px;
+  color: rgb(134, 111, 134);
+}
+
+span {
+  font-size: 16px;
+}
+
+#subtitle {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+#thick {
+  font-weight: bold;
+  color: rgb(125, 125, 175);
+  cursor: pointer;
+}
+
+#thick:hover {
+  font-weight: bold;
+  color: rgb(90, 60, 90);
+  cursor: pointer;
+}
+
+.card {
+  font-weight: bold;
+  color: rgb(90, 60, 90);
+}
+
+.btn-primary {
+  background-color: rgb(125, 125, 175);
+  border-color: rgb(90, 60, 90);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+  background-color: rgb(90, 60, 90);
+  border-color: rgb(125, 125, 175);
+}
+
+
+.btn-confettis:active {
+  margin-top: 0px;
+  box-shadow: 0 0px 0 rgb(160, 160, 160);
+}
+
+.slot {
+  position: relative;
+  perspective: 500px;
+}
+
+.slot div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  background-color: #333333;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-image: url("images/pattern.png");
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilo para la sección principal */
+main {
+  background-color: #cccccc;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-image: url("images/pattern.png");
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+#margin-top1 {
+  margin-top: 1.25rem;
+}
+
+
+/* Estilo para el modal del juego */
+.modal-content {
+  background-color: rgb(23, 29, 35, 25);
+  border: 0px solid rgba(255, 255, 255, .75);
+  width: auto;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .75);
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  background-image: url("images/pattern.png");
+}
+
+/* Estilo para el título del modal */
+.modal-title {
+  color: rgba(255, 255, 255, .75);
+  font-family: Papyrus;
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal {
+  padding-right: 20rem !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  justify-content: space-around;
+  flex-basis: auto;
+}
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p-4 {
+  padding: 0 !important;
+  justify-content: space-around;
+  flex-basis: auto;
+}
+
+.navbar-toggler {
+  background-color: rgb(82, 64, 85, .75) !important;
+}
+
+.nav-item {
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.row {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  #oculto {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+
+  .nav-item {
+    margin-right: 1rem;
+  }
+
+  .p5Canvas {
+    width: 500px !important;
+    height: 400px !important;
+  }
+
+  .modal {
+    padding-right: 2.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 550px) {
+
+  .p5Canvas {
+    width: 400px !important;
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .modal-dialog-centered {
+    min-height: calc(100% - (1.75rem * 2));
+    justify-content: center;
+  }
+
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+
+  .modal {
+    padding-right: 0rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal {
+    padding-right: 0 !important;
+  }
+
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-img-top {
+    width: 15rem;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .p5Canvas {
+    width: 350px !important;
+    height: 250px !important;
+  }
+
+  .modal-body {
+    padding: 0.75rem;
+  }
+
+  #margin-bottom75 {
+    margin-bottom: .75rem;
+  }
+
+  #margin-bottom1 {
+    margin-bottom: 1rem;
+  }
+}
